@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Геометричні фігури</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 20px;
+            transition: background-color 0.3s;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .figure {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .figure:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .figure img {
+            max-width: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+        .figure a {
+            color: #0066cc;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+        .figure a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        #toc {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #toc a {
+            text-decoration: none;
+            color: #0066cc;
+        }
+        #toc a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Геометричні фігури</h1>
+    <div id="toc">
+        <h2>Зміст</h2>
+        <ul>
+            <li><a href="#rectangle">Прямокутник</a></li>
+            <li><a href="#triangle">Трикутник</a></li>
+            <li><a href="#circle">Коло</a></li>
+            <li><a href="#rhombus">Ромб</a></li>
+            <li><a href="#cylinder">Циліндр</a></li>
+            <li><a href="#pyramid">Піраміда</a></li>
+            <li><a href="#cone">Конус</a></li>
+            <li><a href="#sphere">Сфера</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div id="rectangle" class="figure">
+            <h2>Прямокутник</h2>
+            </a><img src="прямокутн.jpg" alt="Прямокутник">
+        <p><a href="rectangle.htm">Прямокутник</a></p>
+            <p>Прямокутник - це чотирикутник, у якого всі кути прямі.</p>
+        </div>
+        <div id="triangle" class="figure">
+            <h2>Трикутник</h2>
+            <a href="triangle.html"><img src="трикутник.jpg" alt="Трикутник">
+        <p><a href="triangle.html">Трикутник</a></p>
+            <p>Трикутник - це багатокутник з трьома сторонами і трьома кутами.</p>
+        </div>
+        <div id="circle" class="figure">
+            <h2>Коло</h2>
+            <a href="circle.html"><img src="коло.jpg" alt="Коло">
+        <p><a href="circle.html">Коло</a></p>
+            <p>Коло - це геометрична фігура, всі точки якої рівновіддалені від центра.</p>
+        </div>
+        <div id="rhombus" class="figure">
+            <h2>Ромб</h2>
+            <a href="rhombus.html"><img src="ромб.jpg" alt="Ромб">
+        <p><a href="rhombus.html">Ромб</a></p>
+            <p>Ромб - це паралелограм, у якого всі сторони рівні.</p>
+        </div>
+        <div id="cylinder" class="figure">
+            <h2>Циліндр</h2>
+            <a href="cylinder.html"><img src="циліндр.jpg" alt="Циліндр">
+        <p><a href="cylinder.html">Циліндр</a></p>
+            <p>Циліндр - це об'ємна фігура, яка складається з двох паралельних кругів та бічної поверхні.</p>
+        </div>
+        <div id="pyramid" class="figure">
+            <h2>Піраміда</h2>
+            <a href="pyramid.html"><img src="піраміда.jpg" alt="Піраміда">
+        <p><a href="pyramid.html">Піраміда</a></p>
+            <p>Піраміда - це об'ємна фігура, основа якої - багатокутник, а інші грані - трикутники.</p>
+        </div>
+        <div id="cone" class="figure">
+            <h2>Конус</h2>
+            <a href="cone.html"><img src="конус.jpg" alt="Конус">
+        <p><a href="cone.html">Конус</a></p>
+            <p>Конус - це об'ємна фігура, яка складається з основи у вигляді кола і бокової поверхні, що сходиться в одну точку.</p>
+        </div>
+        <div id="sphere" class="figure">
+            <h2>Сфера</h2>
+            <a href="sphere.html"><img src="сфера.jpg" alt="Сфера">
+        <p><a href="sphere.html">Сфера</a></p>
+            <p>Сфера - це геометрична фігура, всі точки якої рівновіддалені від центра в тривимірному просторі.</p>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.figure a').forEach(link => {
+            link.addEventListener('mouseover', () => {
+                link.style.color = 'red';
+            });
+            link.addEventListener('mouseout', () => {
+                link.style.color = '#0066cc';
+            });
+        });
+        
+        document.querySelectorAll('.figure').forEach(figure => {
+            figure.addEventListener('mouseover', () => {
+                figure.style.backgroundColor = '#e0e0e0';
+            });
+            figure.addEventListener('mouseout', () => {
+                figure.style.backgroundColor = '#fff';
+            });
+        });
+    </script>
+</body>
+</html>
